@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--fontePadrao);
+    font-size: 16px;
+}
+
+:root{
+    --fontePadrao: font-family: Arial, Helvetica, sans-serif;
+    --corDeFundo: #d2d2c1;
+    --corDeFundoNav: #c5c5b2;
+    --corDoLink: #4b566a;
+    --corDeFundoSection: #e8e8d9;
+    --corH1: #828271;
+    --corImagens: #c3c3ae;
+}
+
+.container{
+    width: 900px;
+}
+
+.titulo{
+    font-size: 25px;
+    color: var(--corH1);
+    margin-bottom: 10px;
+}
+
+body{
+    background-color: var(--corDeFundo);
+    background-image: url(../images/fundo.png);
+    background-position: center;
+    background-repeat: repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagem{
+    background-image: url(../images/capa.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+}
+
+nav{
+    background-color: var(--corDeFundoNav);
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    list-style: none;
+    margin: 18px;
+}
+
+nav ul a{
+    color: var(--corDoLink);
+    padding: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul a:hover{
+    color: #343b47;
+}
+
+nav ul a li{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.barraSeparacao::before{
+    content: " | ";
+    margin: 0;
+    padding: 5px;
+}
+
+section{
+    background-color: var(--corDeFundoSection);
+    padding: 10px;
+}
+
+.foto{
+    margin: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: var(--corImagens) solid 10px;
+    height: 70vh;
+    width: 110vh;
+}
+
+.img1{
+    background-image: url(../images/foto1.png); 
+}
+
+.img2{
+    background-image: url(../images/foto2.png); 
+}
+
+.img3{
+    background-image: url(../images/foto3.png); 
+}
+
+.texto{
+    text-align: justify;
+    line-height: 0.8cm;
+    text-indent: 1cm;
+}
+
+.rodape{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+}
